@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --font-estrofe: 'Sriracha', cursive;
+    --font-body: 'Verdana', Geneva, Tahoma, sans-serif;
+    --font-title: 'Passion One', cursive;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: var(--font-body);
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font-title);
+    font-size: 10vw;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+section {
+    font-family: var(--font-estrofe);
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20px;
+    text-align: left;
+}
+
+section > p {
+    margin-bottom: 2em;
+}
+
+.autor a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.autor a:hover{
+    text-decoration: underline;
+}
+
+.parallax {
+    color: white;
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.475);
+}
+
+.parallax > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#parallax1 {
+    background-image: url('imagens/background001.jpg');
+}
+#parallax2 {
+    background-image: url('imagens/background002.jpg');
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
